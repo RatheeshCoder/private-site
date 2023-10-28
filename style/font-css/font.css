@@ -1,0 +1,34 @@
+/*ArticulatCF Regular */
+@font-face {
+    font-family: 'ArticulatCF Regular';
+    src: url('../../fonts/articulat/ArticulatCF/ArticulatCF-Regular.otf') format('opentype');
+    font-weight: normal; 
+    font-style: normal;
+}
+
+
+/*AcehSoft Regular */
+@font-face {
+    font-family: 'AcehSoft Regular';
+    src: url('../../fonts/AcehSoft/WEBFONT/AcehSoft-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*NoirPro Regular */
+@font-face {
+    font-family: 'Noir Pro Medium'; 
+    src: url('../../fonts/noir-pro/NoirPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AcehSoft Light';
+    src: url('../../fonts/AcehSoft/DEKSTOP/AcehSoft-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
