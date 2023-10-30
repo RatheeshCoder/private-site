@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
+  border: 1px solid #000;
 }
 
 body {
@@ -75,7 +75,7 @@ header .burger div {
     background: #fff;
     padding: 15px 45px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -109,6 +109,7 @@ header .nav-active {
 header .nav-active {
   transform: translateX(0);
   height: 100%;
+  display: flex;
 }
 @keyframes navLinkFade {
   from {
@@ -362,7 +363,7 @@ header .button .btn img {
 }
 .teachYou .cta-content h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3vw;
+  font-size: clamp(0.8rem, 3vw, 3rem);
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -374,7 +375,7 @@ header .button .btn img {
 .teachYou .cta-content p {
   text-align: right;
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1.3vw;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-style: normal;
   font-weight: 200;
   line-height: normal;
@@ -404,7 +405,7 @@ header .button .btn img {
 .learning .grid-container .grid-item h1:nth-child(1) {
   color: rgba(0, 0, 0, 0.29);
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 2vw, 2.8rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -412,7 +413,7 @@ header .button .btn img {
 }
 .learning .grid-container .grid-item h1:nth-child(2) {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2.5vw;
+  font-size: clamp(1rem, 2vw, 2.9rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -420,7 +421,7 @@ header .button .btn img {
 }
 .learning .grid-container .grid-item p {
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(0.8rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -437,7 +438,7 @@ header .button .btn img {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 10% 0;
+  margin: 20% 0;
 }
 .Domain .cta-title {
   width: -moz-fit-content;
@@ -452,7 +453,7 @@ header .button .btn img {
   text-align: start;
   width: 80%;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 6vw;
+  font-size: clamp(1.5rem, 6vw, 6rem);
   font-style: normal;
   font-weight: 700;
   line-height: 1;
@@ -475,7 +476,7 @@ header .button .btn img {
 }
 .Domain .domain-list .grid-container .grid-item h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
@@ -483,7 +484,7 @@ header .button .btn img {
 }
 .Domain .domain-list .grid-container .grid-item p {
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1vw;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -496,6 +497,9 @@ header .button .btn img {
 }
 
 @media screen and (max-width: 574px) {
+  .Domain {
+    margin-bottom: 40%;
+  }
   .Domain .domain-list .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -505,7 +509,7 @@ header .button .btn img {
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 15% 0;
+  margin: 5% 0;
 }
 .skills .cta-title {
   width: -moz-fit-content;
@@ -514,13 +518,13 @@ header .button .btn img {
   height: fit-content;
   padding: 2% 0;
   color: #000;
-  margin-bottom: 5%;
+  margin: 5%;
 }
 .skills .cta-title h1 {
   text-align: center;
   width: 100%;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 5vw;
+  font-size: clamp(1.5rem, 5vw, 5rem);
   font-style: normal;
   font-weight: 700;
   line-height: 1.5;
@@ -546,6 +550,9 @@ header .button .btn img {
 }
 
 @media screen and (max-width: 574px) {
+  .skills {
+    margin-bottom: 20%;
+  }
   .skills .skills-list .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -609,14 +616,14 @@ header .button .btn img {
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-name h2 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 2vw, 2.8rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-name p {
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1.2vw;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -644,7 +651,7 @@ header .button .btn img {
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-skils h2 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -666,7 +673,7 @@ header .button .btn img {
   background: #7AC2D2;
   color: #fff;
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1vw;
+  font-size: clamp(0.5rem, 1vw, 1.2rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -679,7 +686,7 @@ header .button .btn img {
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-projects h2 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -687,7 +694,7 @@ header .button .btn img {
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-projects p {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -699,7 +706,7 @@ header .button .btn img {
   border-radius: 8px;
   background: #0C2321;
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 1.2vw;
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -722,7 +729,7 @@ header .button .btn img {
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-right-content p {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
@@ -732,9 +739,22 @@ header .button .btn img {
   margin-top: 4%;
 }
 
+@media screen and (max-width: 574px) {
+  .testimonial .swiper-container .swiper-wrapper .swiper-slide {
+    display: block;
+  }
+  .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content {
+    width: 100%;
+  }
+  .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-right-content {
+    width: 100%;
+  }
+  .testimonial .swiper-button-prev, .testimonial .swiper-button-next {
+    top: 10%;
+  }
+}
 footer {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -771,7 +791,7 @@ footer .cta-wapper-top .cta-heading {
 }
 footer .cta-wapper-top .cta-heading h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3.2vw;
+  font-size: clamp(1.5rem, 5vw, 3.2rem);
   font-style: normal;
   font-weight: 700;
   line-height: 1.5;
@@ -787,7 +807,7 @@ footer .cta-wapper-top .cta-content {
 }
 footer .cta-wapper-top .cta-content h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3.3vw;
+  font-size: clamp(1rem, 2vw, 3.3rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -796,7 +816,7 @@ footer .cta-wapper-top .cta-content p {
   width: 80%;
   padding: 2% 0;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -808,7 +828,7 @@ footer .cta-wapper-top .cta-content a {
   border-radius: 12px;
   background: #0C2321;
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -838,7 +858,7 @@ footer .cta-wapper-bottom .cta-left-card .cta-content {
 }
 footer .cta-wapper-bottom .cta-left-card .cta-content h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3.3%;
+  font-size: clamp(1.5rem, 2vw, 3.8rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -846,7 +866,7 @@ footer .cta-wapper-bottom .cta-left-card .cta-content h1 {
 footer .cta-wapper-bottom .cta-left-card .cta-content p {
   margin: 1% 0;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(1rem, 2vw, 1.8rem);
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -865,7 +885,7 @@ footer .cta-wapper-bottom .cta-left-card .cta-btn a {
   border-radius: 12px;
   background: #F4F4F4;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -888,7 +908,7 @@ footer .cta-wapper-bottom .cta-right-card .cta-content {
 }
 footer .cta-wapper-bottom .cta-right-card .cta-content h1 {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 3vw;
+  font-size: clamp(1.5rem, 2vw, 3.8rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -896,7 +916,7 @@ footer .cta-wapper-bottom .cta-right-card .cta-content h1 {
 footer .cta-wapper-bottom .cta-right-card .cta-content p {
   margin: 10px 0px;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-style: normal;
   font-weight: 300;
   line-height: 1.5;
@@ -915,12 +935,33 @@ footer .cta-wapper-bottom .cta-right-card .cta-btn a {
   border-radius: 12px;
   background: #454443;
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 2vw;
+  font-size: clamp(1rem, 2vw, 2rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
+@media screen and (max-width: 574px) {
+  footer .cta-wapper-top {
+    display: block;
+  }
+  footer .cta-wapper-top .cta-heading {
+    margin: 0;
+  }
+  footer .cta-wapper-top .cta-content a {
+    width: 100%;
+    text-align: center;
+  }
+  footer .cta-wapper-bottom {
+    display: block;
+  }
+  footer .cta-wapper-bottom .cta-left-card {
+    display: block;
+  }
+  footer .cta-wapper-bottom .cta-right-card {
+    display: block;
+  }
+}
 .copyright {
   width: 100%;
   height: -moz-fit-content;
@@ -933,7 +974,7 @@ footer .cta-wapper-bottom .cta-right-card .cta-btn a {
 }
 .copyright p {
   font-family: "ArticulatCF Regular", Arial, sans-serif;
-  font-size: 1.5vw;
+  font-size: clamp(1rem, 2vw, 1.8rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
