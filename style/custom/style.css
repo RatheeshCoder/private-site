@@ -21,6 +21,7 @@ header {
   z-index: 9999;
 }
 header nav {
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,6 +89,7 @@ header .burger div {
   }
   header .burger {
     display: block;
+    z-index: 99999;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -381,6 +383,11 @@ header .button .btn img {
   width: 70%;
 }
 
+@media screen and (max-width: 574px) {
+  .teachYou .cta-content h1, .teachYou .cta-content p {
+    width: 100%;
+  }
+}
 .learning {
   width: -moz-fit-content;
   width: fit-content;
@@ -497,6 +504,7 @@ header .button .btn img {
 
 @media screen and (max-width: 574px) {
   .Domain {
+    margin-top: 20%;
     margin-bottom: 40%;
   }
   .Domain .domain-list .grid-container {
@@ -672,7 +680,7 @@ header .button .btn img {
   background: #7AC2D2;
   color: #fff;
   font-family: "AcehSoft Regular", Arial, sans-serif;
-  font-size: clamp(0.5rem, 1vw, 1.2rem);
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -709,7 +717,7 @@ header .button .btn img {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 1% 2.5%;
+  padding: 2% 3.5%;
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-right-content {
   width: 50%;
@@ -732,6 +740,7 @@ header .button .btn img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
+  padding: 1%;
 }
 .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-right-content p span {
   display: block;
@@ -745,11 +754,19 @@ header .button .btn img {
   .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content {
     width: 100%;
   }
+  .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-left-content .cta-skils ul {
+    width: 100%;
+  }
   .testimonial .swiper-container .swiper-wrapper .swiper-slide .cta-right-content {
     width: 100%;
   }
   .testimonial .swiper-button-prev, .testimonial .swiper-button-next {
     top: 10%;
+    height: 8%;
+    width: 8%;
+  }
+  .testimonial .swiper-button-prev {
+    left: 80%;
   }
 }
 footer {
@@ -942,7 +959,8 @@ footer .cta-wapper-bottom .cta-right-card .cta-btn a {
 
 @media screen and (max-width: 574px) {
   footer .cta-wapper-top {
-    display: block;
+    flex-direction: column;
+    gap: 20px;
   }
   footer .cta-wapper-top .cta-heading {
     margin: 0;
@@ -952,7 +970,9 @@ footer .cta-wapper-bottom .cta-right-card .cta-btn a {
     text-align: center;
   }
   footer .cta-wapper-bottom {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   footer .cta-wapper-bottom .cta-left-card {
     display: block;
