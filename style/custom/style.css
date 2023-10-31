@@ -21,7 +21,7 @@ header {
   z-index: 9999;
 }
 header nav {
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
